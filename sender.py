@@ -18,9 +18,6 @@ if len(sys.argv) != 4:
 serverName = sys.argv[1]
 serverPort = int(sys.argv[2])
 listeningPort = int(sys.argv[3])
-#serverName = "192.168.1.77"
-#serverPort = 8080
-#listeningPort = 58900
 data = "HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHOOO" * 100
 print(len(data))
 # Global variables
