@@ -1,4 +1,5 @@
 # RDT_Protocol
+This protocol implements a connection-oriented, reliable, pipelined data transfer protocol which includes flow control and congestion control mechanisms. The protocol using UDP sockets as a base and add features like 3-way hand handshake, Loss recovery through retransmission with a timeout and fast retransmission using duplicate ACKs. I also implemented a checksum in case of bit flips. The flow control is handled by reading the available buffer space in the response and limiting the sent packets to avoid overflow. I use slow-start congestion control as my congestion control mechanism.
 
 ## How to run the code
 Use the latest version of python which can be downloaded from [here](https://www.python.org/downloads/)
